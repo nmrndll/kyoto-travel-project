@@ -9,11 +9,10 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2)),
-    url("../images/kyoto.jpg");
+    background-image: url("../images/street.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
+    color: white;
     text-align: center;
     padding: 200px 0;
 }
@@ -23,7 +22,8 @@ header h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 144px;
+    line-height: 20px;
+    text-shadow: 2px 2px 6px #000000;
 }
     
 header h2 {
