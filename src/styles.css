@@ -14,18 +14,23 @@ body {
 
 .grid {
     display: grid;
-    grid-gap: 60px;
+    grid-gap: 64px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
 }
 
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
 }
 
-.grid-3-columns-with-first-narrow {
-    grid-template-columns: 1fr 2fr 2fr;
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-3-columns {
+.grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -42,23 +47,33 @@ body {
     padding: 0 30px 30px;
 }
 
-.section {
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: black;
+    text-decoration: none;
+}
+
+section {
     max-width: 100%;
     margin: 0 auto;
     padding: 100px;
 }
 
 section.secondary {
-background-color: #f8f8f8;
-}
-
-.img-responsive {
-    max-width: 100%;
+    background: #f8f8f8;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/kyoto.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/kyoto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -67,28 +82,27 @@ header {
 }
 
 header h1 {
-    font-family: "Cormorant Garamond", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 20px;
+    line-height: 1;
+    margin: 30px 0;
     text-shadow: 1px 1px 2px #000000;
 }
-    
+
 header h2 {
-    font-family: sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 30px;
     line-height: 1.5;
+    margin: 0;
 }
 
 header h3 {
     font-family: "Tangerine";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
 }
 
 header a {
@@ -96,7 +110,7 @@ header a {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: black;
+    color: #272044;
     padding: 16px 32px;
     margin-top: 32px;
     display: inline-block;
@@ -109,74 +123,78 @@ header a {
 main {
     background-color: white;
 }
+
 main h2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     letter-spacing: 5px;
-    color: black;
+    color: #272044;
     opacity: 0.3;
     text-transform: uppercase;
 }
 
 main h3 {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 1.5;
-    color: black;
+    color: #272044;
     margin: 0;
 }
 
 main h4 {
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.5;
-    color: black;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
 }
 
 main h5 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     line-height: 1;
-    color: black;
-    text-transform: uppercase;
+    color: #272044;
 }
+
 main p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: black;
+    color: #272044;
     opacity: 0.7;
 }
 
 footer {
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/street.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/street.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: sans-serif;
 }
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 footer h4 {
     font-family: "Tangerine";
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 }
-footer h5 {
-    font-style: normal;
-    font-weight: 100px;
-    font-size: 14px;
-    line-height: 30px;
-}
 
-footer h6 {
-    font-style: normal;
-    font-weight: 100px;
-    font-size: 18px;
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 24px;
 }
 
 footer ul {
@@ -204,11 +222,11 @@ footer a {
     }
 
     header h2 {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     header h3 {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .grid {
